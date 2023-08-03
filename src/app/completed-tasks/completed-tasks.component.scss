@@ -1,0 +1,28 @@
+.container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 100vw;
+    min-height: calc(100vh - 56px);
+    background: url(../../assets/benner_11.jpg) no-repeat center;
+    // background-size: cover;
+
+    .task-list {
+        width: 50%;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 83%;
+
+            h2 {
+                margin: 16px 8px 8px 16px;
+                padding: 8px 16px;
+                font-family: 'Lexend', sans-serif;
+            }
+
+        }
+    }
+}

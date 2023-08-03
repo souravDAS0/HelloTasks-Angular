@@ -1,0 +1,18 @@
+<div class="form-content">
+    <a class="close" (click)="close()">X</a>
+    <form #addtask="ngForm" [formGroup]="myForm" (ngSubmit)="onClickSubmit(addtask.value)">
+        <div class="form-group">
+            <input type="text" formControlName="taskName" id="taskName" name="taskName" placeholder="Add Task Name"
+                required ngModel>
+            <div *ngIf="m.taskName.touched && m.taskName.invalid" class="notify">
+                <span *ngIf="m.taskName.errors?.required">Please Enter Task Name</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea type="text" formControlName="taskDetails" id="taskDetails" name="taskDetails"
+                placeholder="Add Task Details" ngModel></textarea>
+        </div>
+        <button type="submit" id="submit">Add Task</button>
+        <!-- <input type="submit" id="submit" value="submit"> -->
+    </form>
+</div>

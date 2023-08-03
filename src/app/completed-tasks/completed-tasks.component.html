@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="task-list">
+        <div class="top">
+            <h2>Completed Tasks</h2>
+        </div>
+        <app-completed-task [tasks]="completedTasks" (toggleEmit)="toggle($event)"
+            (taskDelete)="deleteTask($event)"></app-completed-task>
+    </div>
+    <app-completed-task-details [task]="selectedTask" *ngIf="showTaskDetails" [showTaskDetails]="showTaskDetails"
+        (close)="closeTask()" (taskDelete)="deleteTask($event)"></app-completed-task-details>
+</div>

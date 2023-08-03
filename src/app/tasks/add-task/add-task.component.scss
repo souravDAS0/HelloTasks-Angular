@@ -1,0 +1,83 @@
+.form-content {
+    margin: 100px 80px 0 0;
+    padding: 24px;
+    // width: 510px;
+    // height: 450px;
+    border-radius: 15px;
+    border: 1px solid #4A4646;
+    background: linear-gradient(0deg, #EDCACA 0%, rgba(166, 138, 138, 0.50) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+    .close {
+        color: #000;
+        border: 1px solid #6c6c6c;
+        cursor: pointer;
+        font-weight: 400;
+        padding: 4px 12px;
+        margin: 10px;
+        border-radius: 12px;
+        text-decoration: none;
+        background: linear-gradient(180deg, #CBD466 0%, rgba(234, 255, 0, 0.00) 100%); // border: 1px solid red;
+
+        &:hover {
+            color: #fdfdfd;
+            background: linear-gradient(90deg, #8d9344 0%, rgba(179, 114, 64, 0.708) 100%);
+        }
+
+        &:active {
+            background: linear-gradient(90deg, #727738 0%, rgba(132, 83, 46, 0.708) 100%);
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: flex-end;
+
+        #taskName {
+            padding: 14px 20px;
+            margin: 10px;
+            width: 400px;
+            border-radius: 10px;
+            border: 1px solid #6c6c6c;
+            background: #ffe4e4;
+        }
+
+        #taskDetails {
+            height: 160px;
+            width: 400px;
+            padding: 0px 20px 14px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #6c6c6c;
+            background: #ffe4e4;
+        }
+
+        #submit {
+            padding: 8px 16px;
+            margin: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid #6c6c6c;
+            background: linear-gradient(180deg, #CBD466 0%, rgba(234, 255, 0, 0.00) 100%);
+
+            &:hover {
+                color: #fdfdfd;
+                background: linear-gradient(90deg, #8d9344 0%, rgba(179, 114, 64, 0.708) 100%);
+            }
+
+            &:active {
+                background: linear-gradient(90deg, #727738 0%, rgba(132, 83, 46, 0.708) 100%);
+            }
+        }
+
+        .notify {
+            color: rgb(112, 30, 0);
+            margin-left: 32px;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    ul {
+        height: 35px;
+
+        .navbutton {
+            font-family: 'Encode Sans SC', sans-serif;
+            background: #ECE4E4;
+            height: 100%;
+            padding: 4px 0;
+
+            &:first-child {
+                border-right: 1px solid #9c9494;
+
+            }
+
+            &:hover {
+                background: #dcd4d4;
+            }
+
+            &:active {
+                background: #ccc4c4;
+            }
+
+            a {
+                padding: 0 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        margin-left: 8px;
+
+        li.task-items {
+            margin: 24px;
+            cursor: pointer;
+            width: 80%;
+            border-radius: 15px;
+            border: 1px solid #C2C2C2;
+            padding: 16px 24px;
+            background: linear-gradient(0deg, #EDCACA 0%, rgba(166, 138, 138, 0.50) 100%);
+            font-family: 'Lexend', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition-duration: 2ms;
+            transition-timing-function: ease;
+
+            &:hover {
+                color: antiquewhite;
+                background: linear-gradient(0deg, #c0a2a2 10%, rgb(166, 138, 138) 100%);
+                transform: scale(1.025);
+            }
+
+            &:active {
+                color: antiquewhite;
+                background: linear-gradient(0deg, #c0a2a2 20%, rgb(166, 138, 138) 100%);
+                transform: scale(1.015);
+            }
+
+            .small-buttons {
+                display: flex;
+                align-items: stretch;
+                padding: 0;
+
+                input[type=checkbox] {
+                    margin: 0 8px;
+                    width: 16px;
+                }
+            }
+
+        }
+    }

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="task-list">
+        <div class="top">
+            <h2>My Tasks</h2>
+            <button (click)="openAddTask()">+</button>
+        </div>
+        <app-task [tasks]="tasks" (toggleEmit)="toggle($event)" (taskDelete)="deleteTask($event)"
+            (completed)="completed($event)"></app-task>
+    </div>
+    <app-task-details [task]="selectedTask" *ngIf="showTaskDetails" (taskDelete)="deleteTask($event)"
+        [showTaskDetails]="showTaskDetails" (close)="closeTaskDetails()"
+        (completed)="completed($event)"></app-task-details>
+
+    <app-add-task [tasks]="tasks" *ngIf="openTask" (taskClose)="closeAddTask()"
+        (addTask)="addNewTask($event)"></app-add-task>
+</div>
