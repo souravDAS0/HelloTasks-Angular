@@ -39,19 +39,18 @@
         align-items: flex-end;
 
         #taskName {
-            padding: 14px 20px;
-            margin: 10px;
-            width: 400px;
+            padding: 10px 16px;
+            margin: 5px;
+            width: 95%;
             border-radius: 10px;
             border: 1px solid #6c6c6c;
             background: #ffe4e4;
         }
 
         #taskDetails {
-            height: 160px;
-            width: 400px;
-            padding: 0px 20px 14px;
-            margin: 10px;
+            padding: 10px 16px;
+            margin: 5px 20px 5px 5px;
+            width: 95%;
             border-radius: 10px;
             border: 1px solid #6c6c6c;
             background: #ffe4e4;
@@ -79,5 +78,11 @@
             margin-left: 32px;
             padding: 0;
         }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .form-content {
+        margin: 24px;
     }
 }

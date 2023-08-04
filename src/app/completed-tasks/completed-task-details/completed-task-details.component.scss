@@ -2,8 +2,7 @@
     border-radius: 15px;
     border: 1px solid #504F4F;
     background: linear-gradient(0deg, #EDCACA 0%, rgba(166, 138, 138, 0.50) 100%);
-    width: 500px;
-    // height: 450px;
+    // width: 500px // height: 450px;
     margin-top: 96px;
     margin-right: 160px;
 
@@ -126,4 +125,22 @@
     }
 
 
+}
+
+@media only screen and (max-width: 960px) {
+    .details-wrapper {
+        margin: 24px;
+
+        .head {
+            .left {
+                h4 {
+                    font-size: 18px;
+                }
+
+                h6 {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
 }

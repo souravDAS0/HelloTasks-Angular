@@ -46,3 +46,12 @@
 
         }
     }
+
+    @media only screen and (max-width: 960px) {
+        ul {
+
+            li.task-items {
+                width: 90%;
+            }
+        }
+    }

@@ -6,9 +6,13 @@
 nav {
 
     ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         height: 35px;
 
         .navbutton {
+            display: block;
             font-family: 'Encode Sans SC', sans-serif;
             background: #ECE4E4;
             height: 100%;
@@ -29,7 +33,23 @@ nav {
 
             a {
                 padding: 0 32px;
+                text-decoration: none;
+                color: #0f0f0f;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        width: 100%;
+        justify-content: center;
+
+        .navbutton {
+            width: 100%;
+            text-align: center;
+
+        }
+
     }
 }
