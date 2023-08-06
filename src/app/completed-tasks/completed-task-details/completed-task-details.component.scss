@@ -23,23 +23,18 @@
                 color: #000;
                 font-family: Lexend;
                 font-size: 20px;
-                font-style: normal;
                 font-weight: 400;
-                line-height: normal;
             }
 
             h6 {
                 margin: 4px 24px;
                 font-family: Lexend;
-                font-style: normal;
                 font-weight: 300;
-                line-height: normal;
 
                 span {
                     font-family: Lexend;
-                    font-style: normal;
                     font-weight: 200;
-                    line-height: normal;
+
                 }
             }
         }
@@ -79,9 +74,7 @@
         background: #E8E3E3;
         font-family: Lexend;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 40
     }
 
     a {
@@ -94,9 +87,7 @@
         padding: 8px;
         font-family: Lexend;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 40;
         cursor: pointer;
         transition-duration: 2ms;
         transition-timing-function: ease;
@@ -111,9 +102,7 @@
             margin: 2px 12px 0;
             font-family: Lexend;
             font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            font-weight: 400
         }
 
         &:hover {
