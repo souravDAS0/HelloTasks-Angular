@@ -5,7 +5,7 @@
     align-items: flex-start;
     min-width: 100vw;
     min-height: calc(100vh - 56px);
-    background: url(../../assets/benner_11.jpg) no-repeat center;
+    background: url(../../assets/benner_11.jpg) no-repeat center center;
     // background-size: cover;
 
     .task-list {
@@ -50,6 +50,7 @@
     .container {
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
 
         .task-list {
             width: 95%;
